@@ -35,7 +35,7 @@ EXTRA_REQUIREMENTS = {
     "xpath": ["lxml"],
 }
 EXTRA_REQUIREMENTS["all"] = sum(EXTRA_REQUIREMENTS.values(), [])
-INSTALL_REQUIREMENTS = ["six", "pathlib"] + EXTRA_REQUIREMENTS["csv"]
+INSTALL_REQUIREMENTS = ["six"] + EXTRA_REQUIREMENTS["csv"]
 LONG_DESCRIPTION = """
 No matter in which format your tabular data is: rows will import it,
 automatically detect types and give you high-level Python objects so you can
